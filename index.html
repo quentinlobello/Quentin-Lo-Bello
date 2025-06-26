@@ -886,7 +886,14 @@ Je vous aide à lui donner forme, rythme et caractère, avec une vidéo qui vous
     <script src="app.js"></script>
     <script src="gallery-init.js"></script>
     <!-- Load Scripts End -->
-    
+    <script>
+  window.addEventListener("load", () => {
+    document.getElementById("loaderContent").classList.add("fade-out");
+    setTimeout(() => {
+      document.getElementById("loader").classList.add("loaded");
+    }, 300);
+  });
+</script>
   </body>
 
 </html>
